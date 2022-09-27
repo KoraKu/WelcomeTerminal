@@ -38,6 +38,6 @@ In `.WelcomeTerminal/arts`
 - Compiled with GCC by default
 - Good ASCII-Art website https://www.asciiart.eu/
 - Feel free to edit `WelcomeTerminal.c` to customize how the terminal greets you (more advanced)
-  + Line 33 and 65, be sure to keep the `%c` & `%s`
+  + Line 28 and 60, be sure to keep the `%c` & `%s`
   + Make sure to recompile with `gcc WelcomeTerminal.c` or with your favorite compiler
 - As always, made with 💓

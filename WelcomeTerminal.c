@@ -9,10 +9,11 @@
 int main(int argc, char *argv[]) {
     srand(time(0));
 
+    
+
     char basepath[50];
 
-    strcpy(basepath, "/home/");
-    strcat(basepath, argv[1]); 
+    strcpy(basepath, getenv("HOME"));
     strcat(basepath, "/.WelcomeTerminal/arts/");
     
     char countpath[56]; strcpy(countpath, basepath); strcat(countpath, "count");
@@ -28,10 +29,11 @@ int main(int argc, char *argv[]) {
     //printf("artc : %d\nselected : %d \n", artc, selected);
 
     /*Now display the greeting message.*/
-    system("/home/hugo/.WelcomeTerminal/greeting");
+    char buffer[121];
+    sprintf(buffer, "Hello \033[31m%s\033[0m ! \nWelcome to the \033[1m\033[31mT \033[32mE \033[33mR \033[34mM \033[31mI \033[32mN \033[33mA \033[34mL \033[0m\n", getenv("USERNAME"));
+    printf(buffer);
 
     /*getting the good file for the art*/
-    char buffer[5];
     sprintf(buffer, "%d", selected-1);
 
 

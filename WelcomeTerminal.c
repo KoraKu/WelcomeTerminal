@@ -3,14 +3,9 @@
 #include <time.h>
 #include <string.h>
 
-/*#include <unistd.h>
- * TODO : get the username automatically so that i can share this masterpiece with others or just get them with arguments
-*/
-int main(int argc, char *argv[]) {
+int main() {
     srand(time(0));
-
     
-
     char basepath[50];
 
     strcpy(basepath, getenv("HOME"));

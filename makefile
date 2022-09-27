@@ -7,9 +7,8 @@ $(TARGET):
 	$(COMPILER) $(SOURCE) -o $(TARGET)
 
 install: $(TARGET)
-	echo "~/.WelcomeTerminal/$(TARGET) $(USERNAME)" >> ~/.bashrc
-	chmod 777 greeting
+	echo "~/.WelcomeTerminal/$(TARGET)" >> ~/.bashrc
 	chmod 777 $(TARGET)
 
-	./$(TARGET) $(USERNAME)
+	./$(TARGET)
 

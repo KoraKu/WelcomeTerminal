@@ -30,15 +30,14 @@ In `.WelcomeTerminal/arts`
 - Lastly increment the character in `arts/count` to take changes into account
 
 # Issues
-- If you do not use bash as you default shell, be sure the edit your shell file 
+- If you do not use bash as you default shell, be sure the edit your shell file and add `~/.WelcomeTerminal/WelcomeTerminal`
   + bash -> ~/.bashrc 
   + zsh -> ~/.zshrc
   + \<someShell\> -> ~/.\<someShell\>rc (most likly this format)
 # Information
 - Compiled with GCC by default
 - Good ASCII-Art website https://www.asciiart.eu/
-- Feel free to edit `greeting` to customize how the terminal greets you
-- You can also edit the string at line 63 in `printf()` in WelcomeTerminal.c  (more advanced)
+- Feel free to edit `WelcomeTerminal.c` to customize how the terminal greets you (more advanced)
+  + Line 33 and 65, be sure to keep the `%c` & `%s`
   + Make sure to recompile with `gcc WelcomeTerminal.c` or with your favorite compiler
-  + Make sure `\033[1m\033[4;%sm%s\033[0m` is still present as this is the part that actually displays the name of the art
 - As always, made with 💓

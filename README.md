@@ -28,7 +28,7 @@ In `.WelcomeTerminal/arts`
 |   36   |       Cyan       |
 |   37   |       White      |
 
-- Lastly increment the character in `arts/count` to take changes into account
+- Lastly increment the character (next one in ascii table) in `arts/count` to take changes into account
 
 # Issues
 - If you do not use bash as you default shell, be sure the edit your shell file and add `~/.WelcomeTerminal/WelcomeTerminal`

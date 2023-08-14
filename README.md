@@ -4,6 +4,7 @@ WelcomeTerminal is a simple tool to make your terminal more appealing and welcom
 # Installation
 - `$ git clone https://github.com/KoraKu/WelcomeTerminal` into your home directory
 - `$ mv ./WelcomeTerminal ./.WelcomeTerminal` to make it hidden (won't work if name does not start with a dot)
+- `$ cd ./.WelcomeTerminal`
 - `$ make install`
 
 # Adding Art
